@@ -1,6 +1,6 @@
 <script>
-import HeaderNav from './components/HeaderNav.vue'
-import HeaderJumbotron from './components/HeaderJumbotron.vue'
+import HeaderNav from './components/header_components/HeaderNav.vue'
+import HeaderJumbotron from './components/header_components/HeaderJumbotron.vue'
 export default {
     name: 'AppHeader',
     components: { HeaderJumbotron, HeaderNav },
