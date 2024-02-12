@@ -1,15 +1,18 @@
 <script>
-  import { store } from './data/store';
+import { store } from './data/store';
+import AppHeader from './AppHeader.vue'
+export default {
+  name: 'Futio',
+  components: { AppHeader }
+}
 </script>
 
 <template>
-  <main class="text-danger">Ciao</main>
-  <h1>Ciao</h1>
+  <AppHeader />
 </template>
 
 <style lang="scss">
-  @use './assets/scss/style.scss'
-  
+@use './assets/scss/style.scss'
 </style>
 
 
