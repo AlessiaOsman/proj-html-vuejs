@@ -1,0 +1,8 @@
+@use 'vars';
+@use 'reset';
+@use 'generics';
+
+
+h1{
+    font-family: $orbitron-font;
+}
