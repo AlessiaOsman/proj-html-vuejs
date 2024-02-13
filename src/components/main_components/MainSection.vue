@@ -43,6 +43,7 @@ export default {
         background-image: url('../../assets/img/live-streaming-bg.png');
         background-repeat: no-repeat;
         color: white;
+        background-size: contain;
     }
 
 
