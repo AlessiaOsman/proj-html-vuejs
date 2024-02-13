@@ -40,7 +40,9 @@ export default {
         <div class="carousel row d-flex">
             <div class="col-4" v-for="testimonial in testimonials">
                 <div class="testimonial-card">
-                    <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                    <div class="rating">
+                        <FontAwesomeIcon icon="fa-brands fa-facebook-f" />
+                    </div>
                     <p class="review">"{{ testimonial.text }}"</p>
                     <div class="user-box d-flex gap-3">
                         <figure>
