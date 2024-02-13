@@ -1,4 +1,6 @@
 <script>
+import MainButton from './MainButton.vue';
+
 export default {
     name: 'FeaturesSection',
     data: () => ({
@@ -18,12 +20,19 @@ export default {
                 title: 'Gaming News',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor.',
             }
+        ],
+        button: {
+            label: 'Play Now',
+            image: 'e-double-right-arrow.svg',
+            hidden: 'd-none'
+        }
 
-        ]
-    })
+    }),
+    components: { MainButton }
 }
 </script>
 <template>
+    <!-- feature -->
     <section id="features" class="py-5 d-flex">
         <div>
             <img src="../../assets/img/features-illus.png" alt="features" class="img-fluid pe-5 pt-5">
@@ -44,6 +53,7 @@ export default {
                     </p>
                 </div>
             </div>
+            <MainButton :button="button" />
         </div>
     </section>
 </template>
