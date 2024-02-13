@@ -3,12 +3,6 @@ const footerData = {
     left: {
         image: 'logo.png',
         text: 'Lorem ipsum dolor sit amet, elit. varius enim in eros elementum Duis mi quis viverra ornare',
-        icons: [
-            'facebook',
-            'twitch',
-            'youtube',
-            'instagram'
-        ]
     },
     right: [
         {
