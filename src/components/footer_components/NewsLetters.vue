@@ -13,11 +13,11 @@ export default {
 </script>
 
 <template>
-    <div class="newsletter container my-3">
+    <div class="newsletter container">
         <div class="card">
             <div class="left">
                 <h1>{{ newsletter.title }}</h1>
-                <p>{{ newsletter.yexy }}</p>
+                <p>{{ newsletter.text }}</p>
             </div>
             <div class="right">
                 <form name="newsletter-form">
@@ -32,6 +32,11 @@ export default {
 <style lang="scss" scoped>
 @use '../../assets/scss/vars' as *;
 
+.newsletter {
+    position: relative;
+    top: -150px;
+}
+
 .card {
     background-color: $bg-card;
     color: $color-link;
@@ -39,7 +44,7 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 70px 50px;
     border-radius: 20px;
 
     .left {
