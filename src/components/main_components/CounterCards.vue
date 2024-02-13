@@ -31,6 +31,7 @@ export default {
 .counter-number {
     font-family: $orbitron-font ;
     font-size: 53px;
+    color: white;
 }
 
 
