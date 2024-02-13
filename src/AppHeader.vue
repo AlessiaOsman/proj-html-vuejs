@@ -21,7 +21,9 @@ export default {
 <style scoped lang="scss">
 #header {
     background-image: url(./assets/img/index-banner-bg.png);
-    height: 800px;
+    height: 1400px;
     background-repeat: no-repeat;
+
+    padding: 25px 0;
 }
 </style>
