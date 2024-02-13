@@ -24,6 +24,7 @@ export default {
 }
 </script>
 <template>
+    <!-- feature -->
     <section id="features" class="py-5 d-flex">
         <div>
             <img src="../../assets/img/features-illus.png" alt="features" class="img-fluid pe-5 pt-5">
