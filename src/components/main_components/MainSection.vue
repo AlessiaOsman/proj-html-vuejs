@@ -31,6 +31,7 @@ export default {
 @use '../../assets/scss/_vars.scss' as *;
 
 #main-section {
+
     background-color: $color-black;
     padding: 120px 0;
 
@@ -48,6 +49,7 @@ export default {
 
     .section-header {
         margin-bottom: 54px;
+
 
         h4 {
             color: $color-secondary;

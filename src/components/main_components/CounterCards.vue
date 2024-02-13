@@ -1,17 +1,20 @@
 <script>
 export default {
-    name: 'CounterCard',
+    name: 'CounterCards',
     props: {
-        platform: String,
-        number: Number
+        counters: Array
     }
 
 }
 </script>
 <template>
-    <div class="counter-card">
-        <h3 class="counter-number">{{ number }}</h3>
-        <span class="counter-name">{{ platform }}</span>
+    <div class="row d-flex">
+        <div class="col-lg-3 col-sm-6" v-for="  counter   in   counters  ">
+            <div class="counter-card">
+                <h3 class="counter-number">{{ counter.number }}</h3>
+                <span class="counter-name">{{ counter.platform }}</span>
+            </div>
+        </div>
     </div>
 </template>
 
