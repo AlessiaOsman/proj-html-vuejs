@@ -6,8 +6,8 @@ export default {
 
 <template>
     <div class="row">
-        <div class="col-5"></div>
-        <div class="col-7"><img src="../../assets/img/index-banner-illus.png" alt="banner"></div>
+        <div id="games" class="col-5"></div>
+        <div id="soldier" class="col-7"></div>
     </div>
 </template>
 
