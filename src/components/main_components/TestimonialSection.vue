@@ -71,9 +71,8 @@ export default {
 
             </div>
 
-            <BannerDiscount />
-
         </div>
+        <BannerDiscount />
     </section>
 </template>
 
