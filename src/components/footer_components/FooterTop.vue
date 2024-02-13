@@ -67,10 +67,12 @@ img {
 }
 
 .footer-top {
-    background-color: $bg-card;
+    background-color: #283449;
     color: $color-link;
-    padding: 50px 0;
+    padding-bottom: 30px;
     font-family: $barlow-font;
+    position: relative;
+    bottom: 50px;
 
     h4 {
         font-family: $orbitron-font;
