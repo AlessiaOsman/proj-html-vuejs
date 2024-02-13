@@ -46,13 +46,15 @@ export default {
 <template>
     <main>
         <FeaturesSection />
-        <MainSection title="Trending Battle" subTitle="Keep Eyes & Manage Upcoming Battle"
+        <MainSection sectionBgColor="blue" title="Trending Battle" subTitle="Keep Eyes & Manage Upcoming Battle"
             paragraph="libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta.">
             <MatchCard :items="cards" />
         </MainSection>
         <CounterSection />
         <StreamingSection />
         <TestimonialSection />
-        <BlogSection />
+        <MainSection title="Latest News" subTitle="Stay Updated With Our Latest News Articles"
+            paragraph="libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta.">
+        </MainSection>
     </main>
 </template>
