@@ -23,15 +23,13 @@ export default {
                 <div class="left col-4">
                     <img :src="imagePath(left.image)" alt="logo-futio">
                     <p>{{ left.text }}</p>
-                    <ul class="d-flex gap-2">
-                        <li>Link</li>
-                        <li>Link</li>
-                        <li>Link</li>
-                        <li>Link</li>
+                    <ul class="d-flex gap-2 mt-5">
+                        <li v-for="(icon, i) in left.icons" :key="i">{{ icon }}</li>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
                     </ul>
                 </div>
                 <div class="center col-6 d-flex gap-2 justify-content-between pe-5">
-                    <div v-for="(item, i) in right" :key="i" class="list">
+                    <div v-for="(item, i) in right" :key="i" class="list ">
                         <h4>{{ item.title }}</h4>
                         <ul>
                             <li class="py-1" v-for="(link, i) in right[i].links || right[i].contacts" :key="i">
