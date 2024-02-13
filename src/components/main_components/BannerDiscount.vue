@@ -4,19 +4,24 @@ export default {
 }
 </script>
 <template>
-    <div class="container-fluid row justify-content-center py-5">
-        <div class="banner-box col-lg-10">
-            <div class="bg-objs d-none d-xxl-block ">
-                <img id="phone-obj" src="../../assets/img/banner-item-obj1.png" alt="background object">
-                <img id="hp-obj" src="../../assets/img/banner-item-obj2.png" alt="background object">
-            </div>
-            <div class="banner-content text-white text-center">
-                <div class="banner-text">
-                    <h5>Make offer</h5>
-                    <h2>Get 70% Offer Discount</h2>
-                    <div class="banner-button"><a href="#">Get Offers</a></div>
+    <div class="banner-bg py-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-10 banner-box">
+                    <div class="bg-objs d-none d-xxl-block ">
+                        <img id="phone-obj" src="../../assets/img/banner-item-obj1.png" alt="background object">
+                        <img id="hp-obj" src="../../assets/img/banner-item-obj2.png" alt="background object">
+                    </div>
+                    <div class="banner-content text-white text-center">
+                        <div class="banner-text">
+                            <h5>Make offer</h5>
+                            <h2>Get 70% Offer Discount</h2>
+                            <div class="banner-button"><a href="#">Get Offers</a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </template>
@@ -24,12 +29,17 @@ export default {
 <style scoped lang="scss">
 @use '../../assets/scss/vars' as *;
 
+.banner-bg {
+    background-color: black;
+}
+
 .banner-box {
     background-image: url(../../assets/img/banner-item-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     overflow-y: hidden;
+    border-radius: 15px;
 
     #phone-obj {
         position: absolute;
