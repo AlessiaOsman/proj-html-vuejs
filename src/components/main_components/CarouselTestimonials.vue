@@ -41,9 +41,9 @@ export default {
             <div class="col-4" v-for="testimonial in testimonials">
                 <div class="testimonial-card">
                     <div class="rating">
-                        <FontAwesomeIcon icon="fa-brands fa-facebook-f" />
+                        <FontAwesomeIcon v-for="n in 5" :key="n" :icon="['fas', 'star']" />
                     </div>
-                    <p class="review">"{{ testimonial.text }}"</p>
+                    <div class="review">"{{ testimonial.text }}"</div>
                     <div class="user-box d-flex gap-3">
                         <figure>
                             <img :src="`src/assets/img/${testimonial.testimonialPicture}`">
@@ -68,7 +68,7 @@ export default {
 .testimonial-card {
     background-color: #273449;
     border-radius: 30px;
-    padding: 10px 40px;
+    padding: 34px 40px;
     margin: 0 10px;
 
     .rating {
@@ -80,6 +80,7 @@ export default {
         font-size: 24px;
         font-family: $barlow-font;
         color: #FFFFFF;
+        margin-bottom: 10px;
     }
 
     .testimonial-name {
