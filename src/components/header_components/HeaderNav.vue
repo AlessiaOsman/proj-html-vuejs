@@ -29,7 +29,9 @@ export default {
                     </ul>
                 </div>
                 <div class="col-2">
-                    <img src="../../assets/icon/cart-icon.png" alt="cart">
+                    <a href="#">
+                        <img src="../../assets/icon/cart-icon.png" alt="cart">
+                    </a>
                     <button>live stream</button>
                 </div>
             </div>
@@ -47,6 +49,7 @@ export default {
     padding-top: 30px;
 
     position: fixed;
+    z-index: 2;
     top: 0;
     right: 0;
     left: 0;
