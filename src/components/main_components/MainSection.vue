@@ -1,15 +1,19 @@
 <script>
 export default {
     name: 'MainSection',
+    data: () => ({
+        bgColor: ''
+    }),
     props: {
         title: String,
         subTitle: String,
-        paragraph: String
-    }
+        paragraph: String,
+        sectionBgColor: String,
+    },
 }
 </script>
 <template>
-    <section id="main-section">
+    <section id="main-section" :class="sectionBgColor">
         <div class="container">
             <div class="section-header text-center mx-auto col-7">
                 <h4>{{ title }}</h4>
@@ -27,11 +31,25 @@ export default {
 @use '../../assets/scss/_vars.scss' as *;
 
 #main-section {
-    background-color: #222833;
+
+    background-color: $color-black;
     padding: 120px 0;
+
+    &.blue {
+        background-color: #222833;
+    }
+
+    &.bg-image {
+        background-image: url('../../assets/img/live-streaming-bg.png');
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+
 
     .section-header {
         margin-bottom: 54px;
+
 
         h4 {
             color: $color-secondary;
