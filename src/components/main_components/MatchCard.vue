@@ -3,7 +3,7 @@
     export default{
         name: 'MatchCard',
         props:{
-            items: Array
+            item: Object
         },
 
        methods: {
@@ -21,8 +21,7 @@
     }
 </script>
 <template>
-    <div class="cards-container row mx-auto">
-    <div v-for="item in items" class="col-6">
+    <div class="col-6">
         <div class="match-card">
         <div class="match-card-header d-flex justify-content-between align-items-center">
             <img :src="createImagePath(item.firstTeam)" alt="team">
@@ -43,7 +42,7 @@
         </div>
     </div>
     </div>
-</div>
+
 </template>
 
 <style lang="scss" scoped>
