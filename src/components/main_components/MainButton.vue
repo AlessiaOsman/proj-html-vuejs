@@ -19,7 +19,10 @@ export default {
 <template>
     <div>
         <span>
-            <a href="#">{{ button.label.toUpperCase() }}
+            <a :class="{'d-flex': button.display === 'd-flex',
+                        'gap-2': button.gap === 'gap-2',
+                        'align-items-center' : button.align_items === 'center' 
+        }" href="#">{{ button.label.toUpperCase() }}
 
                 <img :src="imagePath" alt="">
             </a>
@@ -54,15 +57,15 @@ div {
         a {
             font-family: $barlow-font;
             font-weight: 800;
-            font-size: 20px;
+            font-size: 18px;
             background-color: $color-primary;
             text-decoration: none;
             color: black;
-            padding: 10px 25px;
+            padding: 10px 20px;
             border-radius: 35px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            //display: flex;
+            //align-items: center;
+            //gap: 10px;
         }
 
         img {
