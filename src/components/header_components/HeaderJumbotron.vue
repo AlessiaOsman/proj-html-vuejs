@@ -1,8 +1,9 @@
 <script>
 import MainButton from '../main_components/MainButton.vue';
+import SmallButton from '../main_components/SmallButton.vue';
 export default {
     name: 'HeaderJumbotron',
-    components:{MainButton},
+    components: { MainButton, SmallButton },
 
     data: () => ({
         button: {
@@ -33,10 +34,8 @@ export default {
                         </p>
                         <div class="d-flex align-items-center gap-4">
                             <MainButton :button="button" />
-                            <span class="play-container pulse">
-                                <img class="play" src="../../assets/icon/play-icon.png" alt="icon">
-                            </span>
-                            
+                            <SmallButton />
+
                         </div>
                     </div>
                 </div>
@@ -47,19 +46,6 @@ export default {
 
 <style scoped lang="scss">
 @use "../../assets/scss/vars" as *;
-
-
-.play-container{
-    padding: 5px;
-    border-radius: 50%;
-    border: 1px solid $color-primary;
-
-    .play {
-    background-color: white;
-    padding: 16px;
-    border-radius: 48%;
-}
-}
 
 
 #jumbo-box {
