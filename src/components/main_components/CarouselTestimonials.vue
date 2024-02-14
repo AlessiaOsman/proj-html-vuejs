@@ -37,25 +37,24 @@ export default {
 </script>
 <template>
     <div class="carousel-testimonials-container">
-        <div class="carousel row d-flex">
-            <div class="col-4" v-for="testimonial in testimonials">
+        <div class="carousel row d-flex row-gap-3">
+            <div class="col-md-12 col-lg-6 col-xl-4" v-for="testimonial in testimonials">
                 <div class="testimonial-card">
                     <div class="rating">
-                        <FontAwesomeIcon icon="fa-brands fa-facebook-f" />
+                        <FontAwesomeIcon v-for="n in 5" :key="n" :icon="['fas', 'star']" />
                     </div>
-                    <p class="review">"{{ testimonial.text }}"</p>
+                    <div class="review">"{{ testimonial.text }}"</div>
                     <div class="user-box d-flex gap-3">
                         <figure>
                             <img :src="`src/assets/img/${testimonial.testimonialPicture}`">
                         </figure>
                         <div>
                             <h6 class="testimonial-name">{{ testimonial.testimonialName }}</h6>
-                            <p class="testimonial-region"> {{ testimonial.testimonialRegion }}</p>
+                            <span class="testimonial-region"> {{ testimonial.testimonialRegion }}</span>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
 
@@ -68,18 +67,20 @@ export default {
 .testimonial-card {
     background-color: #273449;
     border-radius: 30px;
-    padding: 10px 40px;
+    padding: 34px 40px;
     margin: 0 10px;
 
     .rating {
         color: $color-star;
         font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .review {
         font-size: 24px;
         font-family: $barlow-font;
         color: #FFFFFF;
+        margin-bottom: 20px;
     }
 
     .testimonial-name {

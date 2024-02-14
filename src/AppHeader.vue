@@ -4,6 +4,12 @@ import HeaderJumbotron from './components/header_components/HeaderJumbotron.vue'
 export default {
     name: 'AppHeader',
     components: { HeaderJumbotron, HeaderNav },
+    data: () => ({
+        button: {
+            label: 'live streaming',
+            
+        }
+    })
 
 }
 
@@ -12,7 +18,7 @@ export default {
 <template>
     <header id="header">
         <div class="container-fluid">
-            <HeaderNav />
+            <HeaderNav :button="button" />
             <HeaderJumbotron />
         </div>
     </header>
