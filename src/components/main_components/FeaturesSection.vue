@@ -24,7 +24,9 @@ export default {
         button: {
             label: 'Play Now',
             image: 'e-double-right-arrow.svg',
-            hidden: 'd-none'
+            display: 'd-flex',
+            gap: 'gap-2',
+            align_items: 'center',
         }
 
     }),
