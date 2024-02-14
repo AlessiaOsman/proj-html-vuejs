@@ -1,4 +1,5 @@
 <script>
+import MainButton from '../main_components/MainButton.vue'
 export default {
     name: 'HeaderNav',
     data() {
@@ -10,9 +11,17 @@ export default {
                 { text: 'Pages', url: '/pages' },
                 { text: 'Blog', url: '/blog' },
                 { text: 'Contact', url: '/contact' },
-            ]
+            ],
+            button: {
+                label: 'Live Streaming',
+                image: '',
+                hidden: 'd-none'
+            }
         };
-    }
+    },
+    components: {
+        MainButton
+    },
 };
 </script>
 
@@ -21,18 +30,18 @@ export default {
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-4"><img src="../../assets/img/logo.png" alt="logo"></div>
-                <div class="col-6">
+                <div class="col-5">
                     <ul class="d-flex gap-4">
                         <li v-for="(link, index) in links" :key="index">
                             <a :href="link.url">{{ link.text }}</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-3">
                     <a href="#">
                         <img src="../../assets/icon/cart-icon.png" alt="cart">
                     </a>
-                    <button>live stream</button>
+                    <MainButton :button="button" />
                 </div>
             </div>
         </div>
