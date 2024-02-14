@@ -61,7 +61,6 @@ export default {
             return url.href
         },
     }
-
 };
 </script>
 
@@ -69,10 +68,8 @@ export default {
     <div id="navbar">
         <div class="container">
             <div class="row align-items-center justify-content-center">
-
                 <div class="col-3"><img src="../../assets/img/logo.png" alt="logo"></div>
                 <div class="col-6">
-
                     <ul class="d-flex gap-4">
                         <li class="d-flex align-items-center gap-2 links" v-for="(link, i) in links" :key="i">
                             <a :href="link.url">{{ link.text }}</a>
@@ -82,7 +79,6 @@ export default {
                     </ul>
                 </div>
                 <div class="col-3 d-flex gap-3 align-items-center">
-
                     <a href="#">
                         <img src="../../assets/icon/cart-icon.png" alt="cart">
                     </a>
