@@ -1,9 +1,10 @@
 <script>
 import MainSection from './MainSection.vue';
 import MatchCard from './MatchCard.vue';
+import MainButton from './MainButton.vue';
 export default {
     name: 'MatchSection',
-    components: {MainSection, MatchCard},
+    components: {MainSection, MatchCard, MainButton},
     data: () => ({
         cards: [
             {
@@ -35,6 +36,14 @@ export default {
                 date: 'December 25, 2022 4:00 PM'
             },
         ],
+
+        button: {
+            label: 'Play Now',
+            image: 'e-double-right-arrow.svg',
+            display: 'd-flex',
+            gap: 'gap-2',
+            align_items: 'center',
+        }
     })
 }
 </script>
@@ -44,5 +53,9 @@ export default {
             <div class="cards-container row mx-auto">
                 <MatchCard v-for="card in cards" :item="card" />
             </div>
+            <div class="d-flex justify-content-center mt-5">
+            <MainButton :button="button"/>
+        </div>
         </MainSection> 
+        
 </template>

@@ -30,8 +30,12 @@ export default {
                         <p>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
                         </p>
-                        <div class="d-flex">
+                        <div class="d-flex align-items-center gap-4">
                             <MainButton :button="button" />
+                            <span class="play-container pulse">
+                                <img class="play" src="../../assets/icon/play-icon.png" alt="icon">
+                            </span>
+                            
                         </div>
                     </div>
                 </div>
@@ -42,6 +46,20 @@ export default {
 
 <style scoped lang="scss">
 @use "../../assets/scss/vars" as *;
+
+
+.play-container{
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid $color-primary;
+
+    .play {
+    background-color: white;
+    padding: 16px;
+    border-radius: 48%;
+}
+}
+
 
 #jumbo-box {
     margin-top: -40px;

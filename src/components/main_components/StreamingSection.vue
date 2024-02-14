@@ -27,10 +27,8 @@ export default {
                     <div
                         class="content-area text-center position-absolute d-flex align-items-center justify-content-center">
                         <div class="content-box">
-                            <a class="mfp-iframe popupvideo d-flex mb-40 align-items-center justify-content-center"
-                                href="https://www.youtube.com/watch?v=Djz8Nc0Qxwk">
-                                <img class="play" src="../../assets/icon/play-icon.png" alt="icon">
-                            </a>
+                            <a href=""><img class="play" src="../../assets/icon/play-icon.png" alt="icon"></a>    
+                            
                             <h5 class="title-video m-3">League of Legends</h5>
                         </div>
                     </div>
@@ -40,7 +38,7 @@ export default {
     </MainSection>
 </template>
 
-<style scope lang="scss">
+<style scoped lang="scss">
 @use '../../assets/scss/vars' as *;
 
 .overlay {

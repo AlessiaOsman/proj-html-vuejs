@@ -36,7 +36,7 @@ export default {
 <template>
     <!-- feature -->
     <section id="features" class="py-5 d-flex">
-        <div>
+        <div class="img-feature">
             <img src="../../assets/img/features-illus.png" alt="features" class="img-fluid pe-5 pt-5">
         </div>
         <div class="text-feature pt-5">
@@ -76,6 +76,11 @@ export default {
 #features {
     background-color: black;
     color: white;
+
+    .img-feature{
+        position: relative;
+        left: -50px;
+    }
 }
 
 .text-feature {
