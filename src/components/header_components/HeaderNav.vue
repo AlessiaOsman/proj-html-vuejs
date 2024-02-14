@@ -49,6 +49,8 @@ export default {
                 },
             ],
 
+            scrollposition: null
+
         };
     },
     components: { MainButton, DropdownMenu },
@@ -60,12 +62,19 @@ export default {
             const url = new URL(`../../assets/svg/${image}`, import.meta.url)
             return url.href
         },
-    }
+
+        updatescroll() {
+        this.scrollposition = window.scrollY
+        }
+    },
+    mounted() {
+    window.addEventListener('scroll', this.updatescroll);
+}
 };
 </script>
 
 <template>
-    <div id="navbar">
+    <div id="navbar" :class="{change_color: scrollposition > 50}">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-3"><img src="../../assets/img/logo.png" alt="logo"></div>
@@ -92,6 +101,8 @@ export default {
 <style scoped lang="scss">
 @use "../../assets/scss/vars" as *;
 
+   
+
 #navbar {
     width: 100%;
     max-height: 100px;
@@ -104,7 +115,12 @@ export default {
     right: 0;
     left: 0;
 
-    background-color: #1B222E;
+    background-color: transparent;
+
+    &.change_color {
+       background-color: #1B222E;
+       transition: 0.5s linear;
+   }
 }
 
 ul a {
