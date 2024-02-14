@@ -37,7 +37,7 @@ export default {
 </script>
 <template>
     <div class="carousel-testimonials-container">
-        <div class="carousel row d-flex row-gap-3">
+        <div class="carousel row d-flex row-gap-4">
             <div class="col-md-12 col-lg-6 col-xl-4" v-for="testimonial in testimonials">
                 <div class="testimonial-card">
                     <div class="rating">
@@ -55,6 +55,7 @@ export default {
                     </div>
                 </div>
             </div>
+
         </div>
 
 
@@ -73,14 +74,13 @@ export default {
     .rating {
         color: $color-star;
         font-size: 20px;
-        margin-bottom: 10px;
     }
 
     .review {
         font-size: 24px;
         font-family: $barlow-font;
         color: #FFFFFF;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .testimonial-name {

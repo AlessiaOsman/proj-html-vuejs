@@ -1,17 +1,6 @@
 <script>
-import MainButton from '../main_components/MainButton.vue'
 export default {
     name: 'HeaderJumbotron',
-    components: {
-        MainButton
-    },
-    data: () => ({
-        button: {
-            label: 'Explore Games',
-            image: 'e-double-right-arrow.svg',
-            hidden: 'd-none'
-        }
-    })
 };
 </script>
 
@@ -113,6 +102,5 @@ p {
     font-family: $barlow-font;
     font-size: 24px;
     font-weight: 400;
-    margin-bottom: 25px;
 }
 </style>
