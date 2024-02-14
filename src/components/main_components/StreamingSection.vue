@@ -1,8 +1,9 @@
 <script>
 import MainSection from './MainSection.vue';
+import SmallButton from './SmallButton.vue';
 export default {
     name: 'StreamingSection',
-    components: { MainSection }
+    components: { MainSection, SmallButton }
 }
 </script>
 <template>
@@ -27,8 +28,8 @@ export default {
                     <div
                         class="content-area text-center position-absolute d-flex align-items-center justify-content-center">
                         <div class="content-box">
-                            <a href=""><img class="play" src="../../assets/icon/play-icon.png" alt="icon"></a>    
-                            
+                            <SmallButton />
+
                             <h5 class="title-video m-3">League of Legends</h5>
                         </div>
                     </div>
@@ -71,12 +72,6 @@ export default {
 
 .numbers {
     color: $color-secondary;
-}
-
-.play {
-    background-color: white;
-    padding: 30px;
-    border-radius: 48%;
 }
 
 .bottom-area {
