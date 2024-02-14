@@ -104,7 +104,7 @@ export default {
     right: 0;
     left: 0;
 
-    // background-color: #1B222E;
+    background-color: #1B222E;
 }
 
 ul a {

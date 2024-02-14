@@ -1,6 +1,18 @@
 <script>
+import MainButton from '../main_components/MainButton.vue';
 export default {
     name: 'HeaderJumbotron',
+    components:{MainButton},
+
+    data: () => ({
+        button: {
+            label: 'Explore games',
+            image: 'e-double-right-arrow.svg',
+            display: 'd-flex',
+            gap: 'gap-2',
+            align_items: 'center',
+        }
+    })
 };
 </script>
 
