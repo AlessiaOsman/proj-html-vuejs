@@ -16,25 +16,25 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../assets/scss/vars" as *;
-    .dropdown-menu{
-        top: 40px;
-        translate: -25%;
-        background-color: #1b222e;
+    .dropdown-menu {
+    top: 30px;
+    translate: -25%;
+    background-color: #1b222e;
 
-        &:hover{
-            display: block;
-            
-            a{
-                color: $color-secondary;
-            }
-        }
-        
-        a{
-            color: $color-link;
-            font-family: $orbitron-font;
-            font-weight: 600;
-            font-size: 18px;
-            
+    &:hover {
+        display: block;
+    }
+
+    a {
+        color: $color-link;
+        background-color: transparent;
+        font-family: $orbitron-font;
+        font-weight: 600;
+        font-size: 18px;
+
+        &:hover {
+            color: $color-secondary
         }
     }
+}
 </style>
