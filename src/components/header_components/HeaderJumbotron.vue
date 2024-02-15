@@ -18,27 +18,27 @@ export default {
 </script>
 
 <template>
-    <div id="jumbo-box" class="container-fluid">
+    <div id="jumbo-box" class="container">
         <div class="row">
             <div class="col">
                 <div>
                     <img id="controller" src="../../assets/img/game-controler.png" alt="controller">
                     <img id="soldier" src="../../assets/img/index-banner-illus.png" alt="soldier">
                 </div>
-                <div class="container">
-                    <div id="esport-text">
-                        <h4>Game With Live Stearming</h4>
-                        <h1>Future Of Esports</h1>
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
-                        </p>
-                        <div class="d-flex align-items-center gap-4">
-                            <MainButton :button="button" />
-                            <SmallButton />
 
-                        </div>
+                <div id="esport-text">
+                    <h4>Game With Live Stearming</h4>
+                    <h1>Future Of Esports</h1>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                    </p>
+                    <div class="d-flex align-items-center gap-4">
+                        <MainButton :button="button" />
+                        <SmallButton />
+
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -62,20 +62,18 @@ export default {
 
 .col {
     height: 900px;
-
-    position: relative;
 }
 
 #controller {
     position: absolute;
-    left: 10px;
-    bottom: 80px;
-    z-index: 0;
+    top: 460px;
+    left: 50px;
+    width: 560px
 }
 
 #soldier {
     position: absolute;
-    right: 0;
+    translate: +50%;
 
 }
 
